@@ -1,0 +1,704 @@
+body {
+  background-color: #040714;
+  color: white;
+  width: 100%;
+  font-size: 1em;
+  font-family: avenir-roman;
+}
+@media screen and (min-width: 769px) {
+
+  * li {
+    list-style: none;
+  }
+  .chevron {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 80%;
+    right: 10%;
+    z-index: 4;
+    width: 2em;
+    height: 2em;
+    color: red;
+  }
+ /* ------------------------------------ */
+  /*---------- mes images et logos-------- */
+  /* -------------------------------------- */
+  .logoDisney1 {
+    width: 10%;
+  }
+
+  .logoDisney2 {
+    width: 11%;
+    top: 37%;
+    opacity: none;
+  }
+
+  
+  .image1 {
+    width: 100%;
+  }
+  .image2,
+  .image3,
+  .image4,
+  .image5 {
+    width: 40%;
+    height: auto;
+  }
+  
+  /* -------------------------------------- */
+  /*               MA NAV                   */
+  /* -------------------------------------- */
+  #nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100vw;
+    right: 0%;
+    top: 0%;
+    padding-right: 3%;
+    height: 10vh;
+    background-color: rgba(38, 45, 48, 0.5);
+    z-index: 1;
+  }
+  .logoDisney3 {
+    width: 10%;
+    padding-left: 4%;
+    visibility: hidden;
+  }
+  .logoVisible {
+      animation-name: logoVisible;
+      -webkit-animation-name: logoVisible;
+      animation-duration: 1s;
+      -webkit-animation-duration: 1s;
+      visibility: visible;
+    }
+    
+  
+  /*-------------------------------------------------*/
+  /*              btn-identification                 */
+  /* ----------------------------------------------- */
+  .login {
+    position: relative;
+    text-align: center;
+    color: rgb(224, 211, 209);
+    width: 20vw;
+    height: 6vh;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: rgba(79, 80, 80, 0.1);
+  }
+  .login:hover {
+    background-color: #18beff;
+    color: rgb(4, 116, 13);
+  }
+
+  .login1 {
+    position: relative;
+    text-align: center;
+    color: rgb(224, 211, 209);
+    width: 20vw;
+    height: 6vh;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    background-color: #0483EE;
+    
+  }
+  .login1:hover {
+    color: yellow;
+  }
+
+  /* -------------------------------------------- */
+  /*               ma section choice              */
+  /* -------------------------------------------- */
+  #choice {
+    background: url("./assets/olp_hero_desktop_UKI_FR.jpg");
+    background-position-y: top;
+    background-position-x: right;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    }
+  
+  #left {
+    position: relative;
+    left: 3%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 50vw;
+    height: 70vh;
+  }
+  
+  .pitch {
+    display: flex;
+    font-size: 3vw;
+  }
+  
+  #price {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 40%;
+  }
+  
+  #link,
+  #eco {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    line-height: 170%;
+    height: 100%;
+    width: 45%;
+  }
+  
+  .number {
+    font-size: 3vw;
+  }
+  
+  /* -------btn-eco et btn-link----------- */
+  .blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0483EE;
+    border: solid #443f61 1px;
+    text-decoration: none;
+    font-size: 1vw;
+    width: 80%;
+    height: 10vh;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  
+  .blue:hover {
+    background: rgb(15, 161, 1);
+  }
+  
+  .cond {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.8vw;
+    height: 10vh;
+  }
+  
+  /* -------------------------------------- */
+  /*     screen, divers, original, download */
+  /* ---------------------------------------- */
+  #screen,
+  #divers,
+  #original,
+  #download {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    top: 0%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100vw;
+  }
+  /* -------------------------------------------- */
+  /*            mes DIV dans les section          */
+  /* -------------------------------------------- */
+  .article {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 40vw;
+    height: 50vh;
+  }
+  .article h4 {
+    font-size: 3.1vw;
+  }
+  .article p {
+    font-size: 2vw;
+  }
+  
+  /* ----------------------------------------- */
+  /*                   footer                  */
+  /* ----------------------------------------- */
+  #footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    height: 100vh;
+  }
+
+  #acces {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100vw;
+  }
+
+  #footer h4 {
+    display: flex;
+    justify-content: center;
+    font-size: 3vw;
+  }
+
+  .appareils {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .appareils ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: baseline;
+    align-items: center;
+    width: 100%;
+    padding: 0vw;
+  }
+
+  .appareils>ul>li:nth-child(n + 3) {
+    font-size: 1vw;
+    opacity: 0.3;
+  }
+  .device {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+ 
+  /* ------------------------------------------- */
+  /*              mention legal                  */
+  /* ------------------------------------------- */
+  #end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.8vw;
+    line-height: 30%;
+  }
+  
+  #end :nth-child(n + 2) {
+    opacity: 0.5;
+  }
+  
+  #end-span {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90vw;
+    height: 3vh;
+    font-size: 0.8vw;
+  }
+  
+  #end-span2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+  }
+  
+  #end-p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 3vh;
+    font-size: 0.8vw;
+  }
+  /* ------------------------------------- */
+  /*      barre d'inscrpition footer       */
+  /* ------------------------------------- */
+  .btn {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 20em;
+    background: #85847f;
+    visibility: hidden;
+  }
+  .btn-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #038fcfee;
+    color: yellow;
+    border: solid #443f61 1px;
+    text-decoration: none;
+    font-size: 1vw;
+    width: 50%;
+    height: 10vh;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  .btn-login:hover {
+    background-color: green;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  * p {
+    font-size: 3vw;
+  }
+  .chevron {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 85%;
+    right: 10%;
+    z-index: 4;
+    width: 2vw;
+    height: 2vh;
+    color: red;
+  }
+
+  h4 {
+    font-size: 6vw;
+    margin-bottom: 0%;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;  
+  }
+  /* -------------------------------------- */
+  /*               MA NAV                   */
+  /* -------------------------------------- */
+  #nav {
+    position: fixed;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    top: 0em;
+    height: 10vh;
+    background-color: rgba(38, 45, 48, 0.5);
+    z-index: 1;
+  }
+  .area-connection {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 60vw;
+  }
+
+
+  /*-------------------------------------------------*/
+  /*              btn-identification                 */
+  /* ----------------------------------------------- */
+  .login {
+    position: relative;
+    text-align: center;
+    color: rgb(224, 211, 209);
+    /* width: 60%; */
+    height: 4vh;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    background-color: rgba(79, 80, 80, 0.5);
+  }
+  .login:hover {
+    background-color: #18beff;
+    color: rgb(4, 116, 13);
+  }
+  .login1 {
+    position: relative;
+    text-align: center;
+    color: rgb(224, 211, 209);
+    /* width: 60%; */
+    height: 4vh;
+    border-radius: 7px;
+    -webkit-border-radius: 7px;
+    -moz-border-radius: 7px;
+    -ms-border-radius: 7px;
+    -o-border-radius: 7px;
+    background-color: rgba(79, 80, 80, 0.5);
+  }
+  .login1:hover {
+    color: yellow;
+  }
+
+
+  /* -------------------------------------------- */
+  /*               ma section choice              */
+  /* -------------------------------------------- */
+  #choice {
+    background: right no-repeat url("./assets/olp_hero_mobile_UKI_FR.jpg");
+    background-position-y: top;
+    background-position-x: right;
+    background-size: contain;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
+    width: 100%;
+    top: 20%;
+    position: static;
+
+  }
+
+  #left {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .pitch {
+    display: flex;
+    font-size: 3vw;
+    letter-spacing: 1%;
+
+  }
+
+  #link, #eco {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 20vh;
+
+  }
+
+  #Price {
+    position: relative; 
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-content: center;
+    line-height: 27vh;
+    height: 100%;
+    width: 20vw;
+
+  }
+
+  .number {
+    font-size: 5vw;
+  }
+  .container {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 100vw;
+    height: 100%;
+  }
+  /* -------btn-eco et btn-link----------- */
+  .blue {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #0483EE;
+    color: white;
+    border: solid #443f61 1px;
+    text-decoration: none;
+    font-size: 2.5vw;
+    width: 50%;
+    height: 7vh;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+  }
+  
+  .blue:hover {
+    background: rgb(15, 161, 1);
+  }
+  
+  .cond {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2vw;
+    height: 10vh;
+  }
+  /* -------------------------------------------- */
+  /*            mes DIV dans les section          */
+  /* -------------------------------------------- */
+  #screen,
+  #download {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    
+
+  }
+
+  #divers,
+  #original {
+    position: relative;
+    display: flex;
+    flex-direction: column-reverse;
+    align-content: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+
+  }
+
+  * .article {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 70vw;
+  }
+
+  /* ------------------------------------ */
+  /*---------- mes images et logos-------- */
+  /* -------------------------------------- */
+  .logoDisney1 {
+    width: 10vw;
+  }
+  
+  .logoDisney2 {
+    width: 11VW;
+    top: 37em;
+    opacity: none;
+  }
+  
+  .logoDisney3 {
+    width: 10em;
+    padding-left: 4em;
+    opacity: 1;
+  }
+  
+  .image1,
+  .image2,
+  .image3,
+  .image4,
+  .image5 {
+    width: 80%;
+  }
+
+  
+  /* --------------------------- */
+  /*           footer            */
+  /* --------------------------- */
+  #footer {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-content: space-around;
+    top: 20vw;
+
+  }
+
+  #acces {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+    width: 100VW;
+  }
+
+  #footer h4 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .appareils {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding: none;
+    /* border: white solid 1px; */
+  }
+
+  .appareils ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+  }
+
+  .appareils>ul>li {
+    display: flex;
+    /* flex-direction: column; */
+    /* align-items: ; */
+    /* justify-content: center; */
+    width: 100v;
+  }
+
+  .appareils>ul>li:nth-child(n + 3) {
+    font-size: 10px;
+    line-height: 3vh;
+    opacity: 0.3;
+  }
+
+  .device {
+    /* display: flex;
+    justify-content: center; */
+    width: 20vw;
+  }
+
+  #end {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 10px;
+    width: 100%;
+    height: 20vh;
+  }
+
+  #end :nth-child(n + 2) {
+    opacity: 0.5;
+  }
+
+  #end-span {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: wrap;
+    width: 100%;
+  }
+
+  #end-span2 {
+    display: flex;
+    flex-direction: wrap;
+  }
+
+  #end-p {
+    display: flex;
+  }
+
+}
+
+@media screen and (min-width: 320px) and (max-width: 480px) {}
